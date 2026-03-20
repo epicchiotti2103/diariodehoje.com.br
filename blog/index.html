@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Diário de Hoje</title>
+  <meta name="description" content="Artigos editoriais, análises e opinião do Diário de Hoje.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;0,6..72,800;1,6..72,400&family=Inter:wght@400;500;600&family=Work+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <div style="display:flex;align-items:center;gap:2rem">
+        <a class="topnav-brand" href="/">diariodehoje.com.br</a>
+        <div class="topnav-links">
+          <a href="/">Início</a>
+          <a href="/blog/" class="active">Blog</a>
+          <a href="/sobre.html">Sobre</a>
+          <a href="/contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="topnav-actions">
+        <button id="btn-menu-open" class="btn-menu" aria-label="Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="btn-menu-close" class="mobile-menu-close" aria-label="Fechar menu">
+      <span class="material-symbols-outlined" style="font-size:2rem">close</span>
+    </button>
+    <a href="/">Início</a>
+    <a href="/blog/">Blog</a>
+    <a href="/sobre.html">Sobre</a>
+    <a href="/contato.html">Contato</a>
+    <a href="/privacidade.html">Privacidade</a>
+  </div>
+
+  <main class="page-content" style="padding-top:6rem;max-width:1200px">
+
+    <h1>Blog</h1>
+    <p style="color:var(--secondary);font-size:1.1rem;margin-bottom:2rem">Artigos editoriais, análises e opinião.</p>
+
+    <!-- BLOG_FILTER_BUTTONS -->
+
+    <div class="blog-grid">
+      <!-- BLOG_LISTING -->
+      <p style="color:var(--secondary);grid-column:1/-1;text-align:center;padding:3rem 0">Artigos em breve. Acompanhe nossas <a href="/" style="color:var(--primary);text-decoration:underline">notícias do dia</a> enquanto isso.</p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">diariodehoje.com.br</div>
+        <p class="footer-copy">© 2026 Diário de Hoje — O Registro Autoridade do Dia.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-col">
+          <a href="/sobre.html">Sobre</a>
+          <a href="/contato.html">Contato</a>
+          <a href="/privacidade.html">Privacidade</a>
+        </div>
+        <div class="footer-links-col">
+          <a href="/blog/">Blog</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

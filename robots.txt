@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
+Sitemap: https://diariodehoje.com.br/sitemap.xml
 
+# AI Crawlers — bem-vindos
 User-agent: GPTBot
 Allow: /
 
@@ -10,10 +12,14 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://diariodehoje.com.br/sitemap.xml
+User-agent: Bytespider
+Disallow: /

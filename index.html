@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário de Hoje — O Registro Autoridade do Dia</title>
+  <meta name="description" content="Curadoria diária das notícias que realmente importam. Brasil, Mundo, Economia, Esporte e Tecnologia.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diário de Hoje — O Registro Autoridade do Dia">
+  <meta property="og:description" content="Curadoria diária das notícias que realmente importam.">
+  <meta property="og:url" content="https://diariodehoje.com.br">
+  <meta property="og:site_name" content="Diário de Hoje">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;0,6..72,800;1,6..72,400&family=Inter:wght@400;500;600&family=Work+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Diário de Hoje",
+        "url": "https://diariodehoje.com.br",
+        "description": "Curadoria diária das notícias que realmente importam. Brasil, Mundo, Economia, Esporte e Tecnologia.",
+        "inLanguage": "pt-BR",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://diariodehoje.com.br/blog/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "Diário de Hoje",
+        "url": "https://diariodehoje.com.br",
+        "logo": "https://diariodehoje.com.br/assets/img/logo.png",
+        "sameAs": []
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══ Top Nav ═══ -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <div style="display:flex;align-items:center;gap:2rem">
+        <a class="topnav-brand" href="/">diariodehoje.com.br</a>
+        <div class="topnav-links">
+          <a href="/" class="active">Início</a>
+          <a href="/blog/">Blog</a>
+          <a href="/sobre.html">Sobre</a>
+          <a href="/contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="topnav-actions">
+        <button id="btn-menu-open" class="btn-menu" aria-label="Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ Mobile Menu ═══ -->
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="btn-menu-close" class="mobile-menu-close" aria-label="Fechar menu">
+      <span class="material-symbols-outlined" style="font-size:2rem">close</span>
+    </button>
+    <a href="/">Início</a>
+    <a href="/blog/">Blog</a>
+    <a href="/sobre.html">Sobre</a>
+    <a href="/contato.html">Contato</a>
+    <a href="/privacidade.html">Privacidade</a>
+  </div>
+
+  <!-- ═══ Date Bar ═══ -->
+  <div style="padding-top:73px">
+    <div class="date-bar">
+      <span id="date-today"></span>
+      <span>Edição Digital</span>
+    </div>
+  </div>
+
+  <!-- ═══ Category Tabs ═══ -->
+  <div style="max-width:1440px;margin:0 auto;padding:1.5rem 1.5rem 0">
+    <div id="cat-tabs" class="cat-tabs">
+      <button class="cat-tab active" data-cat="">Todas</button>
+      <button class="cat-tab" data-cat="brasil">Brasil</button>
+      <button class="cat-tab" data-cat="mundo">Mundo</button>
+      <button class="cat-tab" data-cat="economia">Economia</button>
+      <button class="cat-tab" data-cat="esporte">Esporte</button>
+      <button class="cat-tab" data-cat="tecnologia">Tecnologia</button>
+    </div>
+  </div>
+
+  <!-- ═══ Main Content ═══ -->
+  <main class="main-content">
+
+    <!-- Left: News Grid -->
+    <section>
+      <div class="section-header">
+        <h2>Últimas Notícias</h2>
+      </div>
+      <div id="news-grid" class="news-grid">
+        <!-- JS popula via RSS proxy -->
+      </div>
+    </section>
+
+    <!-- Right: Sidebar -->
+    <aside class="sidebar">
+
+      <!-- Mais Lidas -->
+      <section>
+        <div class="section-header">
+          <h2>Mais Lidas</h2>
+        </div>
+        <div id="most-read">
+          <!-- JS popula -->
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter-box">
+        <h3>A autoridade no seu e-mail.</h3>
+        <p>Receba nossa curadoria diária com os fatos que realmente importam.</p>
+        <input type="email" placeholder="Seu melhor e-mail" aria-label="Seu e-mail">
+        <button class="btn-primary">Inscrever-se</button>
+      </section>
+
+      <!-- Blog Destaque -->
+      <section>
+        <div class="section-header section-header-dark">
+          <h2>Do Blog</h2>
+        </div>
+        <div id="blog-highlights">
+          <p style="color:var(--secondary);font-size:0.85rem">Artigos editoriais em breve.</p>
+        </div>
+      </section>
+
+    </aside>
+  </main>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">diariodehoje.com.br</div>
+        <p class="footer-copy">© 2026 Diário de Hoje — O Registro Autoridade do Dia.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-col">
+          <a href="/sobre.html">Sobre</a>
+          <a href="/contato.html">Contato</a>
+          <a href="/privacidade.html">Privacidade</a>
+        </div>
+        <div class="footer-links-col">
+          <a href="/blog/">Blog</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
