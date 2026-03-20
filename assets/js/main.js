@@ -67,20 +67,45 @@ function renderSkeletons(container, count = 6) {
   container.innerHTML = html;
 }
 
+// ─── Cores por categoria ───
+const CAT_COLORS = {
+  brasil:     "#1b4332",
+  mundo:      "#1b3a4b",
+  economia:   "#b8860b",
+  esporte:    "#9e0000",
+  tecnologia: "#4a1080",
+};
+
 // ─── Render News Card ───
 function renderCard(item, isHero = false) {
-  const imgHtml = item.image
-    ? `<img src="${item.image}" alt="${item.title}" loading="lazy">`
-    : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--secondary);font-family:var(--font-label);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em">${catLabel(item.category)}</div>`;
+  const hasImage = !!item.image;
+  const catColor = CAT_COLORS[item.category] || "#2d2d2d";
 
   const descHtml = item.description && item.description.length > 20
     ? `<p>${item.description}</p>`
     : "";
 
+  // ─── Hero (primeiro card) ───
   if (isHero) {
+    if (hasImage) {
+      return `
+        <a class="news-hero" href="${item.link}" target="_blank" rel="noopener">
+          <div class="news-card-img">
+            <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.closest('.news-hero').classList.add('no-img');this.closest('.news-card-img').remove()">
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-meta">
+              <span class="cat">${catLabel(item.category)}</span>
+              <span>${item.source} • ${timeAgo(item.published)}</span>
+            </div>
+            <h3>${item.title}</h3>
+            ${descHtml}
+          </div>
+        </a>`;
+    }
+    // Hero sem imagem — full-width texto com borda
     return `
-      <a class="news-hero" href="${item.link}" target="_blank" rel="noopener">
-        <div class="news-card-img">${imgHtml}</div>
+      <a class="news-hero no-img" href="${item.link}" target="_blank" rel="noopener" style="border-left:4px solid ${catColor};padding-left:1.5rem">
         <div class="news-card-body">
           <div class="news-card-meta">
             <span class="cat">${catLabel(item.category)}</span>
@@ -92,10 +117,28 @@ function renderCard(item, isHero = false) {
       </a>`;
   }
 
+  // ─── Card normal COM imagem ───
+  if (hasImage) {
+    return `
+      <a class="news-card" href="${item.link}" target="_blank" rel="noopener">
+        <div class="news-card-img">
+          <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.closest('.news-card').classList.add('no-img');this.closest('.news-card-img').remove()">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">
+            <span class="cat">${catLabel(item.category)}</span>
+            <span>${item.source} • ${timeAgo(item.published)}</span>
+          </div>
+          <h3>${item.title}</h3>
+          ${descHtml}
+        </div>
+      </a>`;
+  }
+
+  // ─── Card normal SEM imagem — texto com borda lateral ───
   return `
-    <a class="news-card" href="${item.link}" target="_blank" rel="noopener">
-      <div class="news-card-img">${imgHtml}</div>
-      <div class="news-card-body">
+    <a class="news-card no-img" href="${item.link}" target="_blank" rel="noopener" style="border-left:4px solid ${catColor};padding-left:1rem">
+      <div class="news-card-body" style="padding-top:0">
         <div class="news-card-meta">
           <span class="cat">${catLabel(item.category)}</span>
           <span>${item.source} • ${timeAgo(item.published)}</span>

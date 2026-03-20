@@ -306,6 +306,31 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   overflow: hidden;
 }
 
+/* ─── Cards sem imagem ─── */
+.news-card.no-img {
+  background: var(--surface-container-low);
+  padding: 1.25rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.news-card.no-img:hover {
+  background: var(--surface-container);
+}
+
+.news-hero.no-img {
+  display: block;
+  background: var(--surface-container-low);
+  padding: 2rem;
+}
+
+.news-hero.no-img h3 {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .news-hero.no-img h3 { font-size: 2.25rem; }
+}
+
 /* ─── Hero Card (first/featured) ─── */
 .news-hero {
   grid-column: 1 / -1;
