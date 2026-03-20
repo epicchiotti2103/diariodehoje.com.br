@@ -2,26 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://diariodehoje.com.br/</loc>
-    <lastmod>2026-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://diariodehoje.com.br/sobre.html</loc>
-    <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://diariodehoje.com.br/contato.html</loc>
-    <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://diariodehoje.com.br/blog/</loc>
-    <lastmod>2026-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/xiaomi-ia-hunter-alpha-investimento/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/windows-11-fim-atualizacoes-forcadas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/strava-porta-avioes-franca-seguranca-digital/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/telegram-rede-social-criminosos-relatorio/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/sonia-guajajara-sai-ministerio-politica-indigenista/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/risco-desabastecimento-combustiveis-brasil/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/ozempic-canetas-emagrecedoras-desigualdade-social/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/militares-cargos-publicos-proposta-congresso/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/libertadores-2026-viagens-distancias-clubes-brasileiros/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/hugo-souza-selecao-crise-goleiros-brasileiros/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/guerra-ira-petroleo-impacto-brasil/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/economist-trump-ira-operacao-furia-cega-imprensa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/dolar-ibovespa-queda-mercados-marco-2026/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/durigan-haddad-ministerio-fazenda-transicao/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/cuba-diaz-canel-eua-negociacao-impasse/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/colombia-presidente-narcotrafico-crise-politica/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/bitcoin-abaixo-70-mil-guerra-juros/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/bezos-100-bilhoes-ia-industrial-fabricas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/android-espera-24-horas-sideload-apps/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diariodehoje.com.br/blog/argentina-pib-crescimento-milei-2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

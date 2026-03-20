@@ -50,12 +50,209 @@
     <h1>Blog</h1>
     <p style="color:var(--secondary);font-size:1.1rem;margin-bottom:2rem">Artigos editoriais, análises e opinião.</p>
 
-    <!-- BLOG_FILTER_BUTTONS -->
+    <div class="cat-tabs" style="margin-bottom:2rem"><button class="cat-tab active" onclick="filterBlog('')">Todos</button><button class="cat-tab" onclick="filterBlog('brasil')">Brasil</button><button class="cat-tab" onclick="filterBlog('economia')">Economia</button><button class="cat-tab" onclick="filterBlog('esporte')">Esporte</button><button class="cat-tab" onclick="filterBlog('mundo')">Mundo</button><button class="cat-tab" onclick="filterBlog('tecnologia')">Tecnologia</button></div>
 
     <div class="blog-grid">
-      <!-- BLOG_LISTING -->
-      <p style="color:var(--secondary);grid-column:1/-1;text-align:center;padding:3rem 0">Artigos em breve. Acompanhe nossas <a href="/" style="color:var(--primary);text-decoration:underline">notícias do dia</a> enquanto isso.</p>
-    </div>
+        <a href="/blog/xiaomi-ia-hunter-alpha-investimento/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Tecnologia</span>
+              <span>19 de Março, 2026</span>
+            </div>
+            <h3>Xiaomi Lança IA Própria e Investe R$ 46 Bilhões: O Plano Chinês para Dominar a Inteligência Artificial</h3>
+            <p>Xiaomi revela modelo de IA Hunter Alpha e anuncia investimento bilionário. China acelera na corrida contra os EUA.</p>
+          </div>
+        </a>
+        <a href="/blog/windows-11-fim-atualizacoes-forcadas/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Tecnologia</span>
+              <span>17 de Março, 2026</span>
+            </div>
+            <h3>Windows 11 Acaba com Atualizações Forçadas: Microsoft Finalmente Ouviu os Usuários?</h3>
+            <p>Microsoft anuncia fim das atualizações forçadas no Windows 11 e mudanças na barra de tarefas. Empresa cede à pressão dos usuários após anos de críticas.</p>
+          </div>
+        </a>
+        <a href="/blog/strava-porta-avioes-franca-seguranca-digital/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Mundo</span>
+              <span>15 de Março, 2026</span>
+            </div>
+            <h3>Aplicativo de Corrida Revela Posição de Porta-Aviões Francês: A Falha de Segurança da Era Digital</h3>
+            <p>App de corrida expõe localização de porta-aviões da França no Mediterrâneo. Especialistas alertam para riscos de segurança nacional.</p>
+          </div>
+        </a>
+        <a href="/blog/telegram-rede-social-criminosos-relatorio/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Tecnologia</span>
+              <span>15 de Março, 2026</span>
+            </div>
+            <h3>Telegram Ainda É o Refúgio dos Criminosos: Por Que a Plataforma Não Consegue Mudar Essa Imagem</h3>
+            <p>Novo relatório aponta Telegram como rede preferida por criminosos. Plataforma segue no centro de polêmicas.</p>
+          </div>
+        </a>
+        <a href="/blog/sonia-guajajara-sai-ministerio-politica-indigenista/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Brasil</span>
+              <span>13 de Março, 2026</span>
+            </div>
+            <h3>Sônia Guajajara Sai do Ministério: O Que Isso Significa para a Política Indigenista do Brasil</h3>
+            <p>Ministra dos Povos Indígenas deixa cargo para disputar reeleição como deputada federal por SP. Análise do impacto na política indigenista.</p>
+          </div>
+        </a>
+        <a href="/blog/risco-desabastecimento-combustiveis-brasil/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Economia</span>
+              <span>11 de Março, 2026</span>
+            </div>
+            <h3>Risco de Desabastecimento de Combustíveis: Por Que o Setor Está em Alerta no Brasil</h3>
+            <p>Setor de combustíveis alerta para risco real de falta de diesel e gasolina. ANP reconhece situação excepcional enquanto importações despencam.</p>
+          </div>
+        </a>
+        <a href="/blog/ozempic-canetas-emagrecedoras-desigualdade-social/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Mundo</span>
+              <span>9 de Março, 2026</span>
+            </div>
+            <h3>Ozempic e a Desigualdade: Por Que as Canetas Emagrecedoras Podem Criar um Novo Abismo Social</h3>
+            <p>Revolução das canetas emagrecedoras esbarra na desigualdade. Só os ricos terão acesso à magreza?</p>
+          </div>
+        </a>
+        <a href="/blog/militares-cargos-publicos-proposta-congresso/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Brasil</span>
+              <span>8 de Março, 2026</span>
+            </div>
+            <h3>Militares em Cargos Públicos: Por Que a Proposta de Barrar Ativistas Emperra no Congresso</h3>
+            <p>Proposta que proíbe militares da ativa em cargos políticos enfrenta resistência no Congresso após legado do governo Bolsonaro.</p>
+          </div>
+        </a>
+        <a href="/blog/libertadores-2026-viagens-distancias-clubes-brasileiros/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Esporte</span>
+              <span>6 de Março, 2026</span>
+            </div>
+            <h3>Libertadores 2026: As Maratonas de Quase 10 Mil Km Que os Clubes Brasileiros Enfrentam</h3>
+            <p>Clubes brasileiros encaram viagens de quase 10 mil km na fase de grupos da Libertadores 2026, criando desafios únicos de logística e desempenho.</p>
+          </div>
+        </a>
+        <a href="/blog/hugo-souza-selecao-crise-goleiros-brasileiros/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Esporte</span>
+              <span>5 de Março, 2026</span>
+            </div>
+            <h3>Hugo Souza na Seleção e a Crise dos Goleiros Brasileiros: Alisson Fora É Sintoma de Algo Maior?</h3>
+            <p>Convocação de Hugo Souza para vaga de Alisson levanta debate sobre a nova geração de goleiros do Brasil.</p>
+          </div>
+        </a>
+        <a href="/blog/guerra-ira-petroleo-impacto-brasil/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Economia</span>
+              <span>4 de Março, 2026</span>
+            </div>
+            <h3>Guerra no Irã Pressiona Petróleo e Ameaça o Bolso do Brasileiro: O Que Está em Jogo</h3>
+            <p>Conflito entre EUA e Irã eleva petróleo ao maior nível desde 2022 e ameaça diesel e gasolina no Brasil.</p>
+          </div>
+        </a>
+        <a href="/blog/economist-trump-ira-operacao-furia-cega-imprensa/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Mundo</span>
+              <span>2 de Março, 2026</span>
+            </div>
+            <h3>The Economist Ironiza Ataque de Trump ao Irã: O Que a Imprensa Internacional Diz Sobre a 'Operação Fúria Cega'</h3>
+            <p>Capa da The Economist chama ação de Trump no Irã de 'Operação Fúria Cega'. Como o mundo vê o conflito.</p>
+          </div>
+        </a>
+        <a href="/blog/dolar-ibovespa-queda-mercados-marco-2026/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Economia</span>
+              <span>28 de Fevereiro, 2026</span>
+            </div>
+            <h3>Dólar Dispara a R$ 5,30 e Ibovespa Derrete: Entenda a Tempestade Perfeita nos Mercados</h3>
+            <p>Dólar sobe quase 2% e Ibovespa acumula quarta semana no negativo. O que está por trás da turbulência nos mercados brasileiros.</p>
+          </div>
+        </a>
+        <a href="/blog/durigan-haddad-ministerio-fazenda-transicao/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Economia</span>
+              <span>28 de Fevereiro, 2026</span>
+            </div>
+            <h3>De Haddad a Durigan: O Que Muda (e o Que Não Muda) na Fazenda de Lula</h3>
+            <p>Novo ministro prega continuidade, mas troca na Fazenda acontece em momento de turbulência nos mercados.</p>
+          </div>
+        </a>
+        <a href="/blog/cuba-diaz-canel-eua-negociacao-impasse/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Mundo</span>
+              <span>26 de Fevereiro, 2026</span>
+            </div>
+            <h3>Cuba Se Recusa a Negociar Saída de Díaz-Canel: O Que Está por Trás do Impasse com os EUA</h3>
+            <p>Governo cubano rejeita negociar mandato presidencial em conversas com EUA. Crise humanitária se agrava enquanto pressão geopolítica aumenta.</p>
+          </div>
+        </a>
+        <a href="/blog/colombia-presidente-narcotrafico-crise-politica/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Mundo</span>
+              <span>24 de Fevereiro, 2026</span>
+            </div>
+            <h3>Presidente da Colômbia Nega Relação com Narcotráfico: A Crise Política Que Abala Bogotá</h3>
+            <p>Presidente colombiano nega contato com narcotraficantes em meio a escândalo político crescente que pode redefinir o futuro da esquerda no país.</p>
+          </div>
+        </a>
+        <a href="/blog/bitcoin-abaixo-70-mil-guerra-juros/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Economia</span>
+              <span>22 de Fevereiro, 2026</span>
+            </div>
+            <h3>Bitcoin Segue Abaixo de US$ 70 Mil: O Que a Guerra e os Juros Fazem com as Criptomoedas</h3>
+            <p>Bitcoin opera estável mas sem força para romper os US$ 70 mil. Guerra e juros altos pesam no mercado cripto.</p>
+          </div>
+        </a>
+        <a href="/blog/bezos-100-bilhoes-ia-industrial-fabricas/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Tecnologia</span>
+              <span>21 de Fevereiro, 2026</span>
+            </div>
+            <h3>Jeff Bezos Quer US$ 100 Bilhões para IA Industrial: A Nova Corrida das Big Techs</h3>
+            <p>Fundador da Amazon quer levantar US$ 100 bilhões para aplicar IA em fábricas. O que isso significa para o futuro do trabalho.</p>
+          </div>
+        </a>
+        <a href="/blog/android-espera-24-horas-sideload-apps/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Tecnologia</span>
+              <span>19 de Fevereiro, 2026</span>
+            </div>
+            <h3>Android Vai Obrigar Espera de 24 Horas para Instalar Apps de Fora da Play Store: Segurança ou Controle?</h3>
+            <p>Google implementa espera de 24h para instalar apps fora da Play Store no Android. Medida divide opiniões entre segurança e controle.</p>
+          </div>
+        </a>
+        <a href="/blog/argentina-pib-crescimento-milei-2025/" class="news-card" style="border-left:4px solid var(--primary);padding-left:1rem">
+          <div class="news-card-body" style="padding-top:0">
+            <div class="news-card-meta">
+              <span class="cat">Mundo</span>
+              <span>19 de Fevereiro, 2026</span>
+            </div>
+            <h3>Argentina Cresce 4,4% em 2025: Milei Venceu a Crise ou É Cedo para Comemorar?</h3>
+            <p>PIB argentino cresce 4,4% em 2025, mas desafios de estabilização persistem sob governo Milei.</p>
+          </div>
+        </a></div>
 
   </main>
 
