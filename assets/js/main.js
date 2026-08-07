@@ -271,3 +271,39 @@ document.addEventListener("DOMContentLoaded", () => {
     loadMostRead();
   }
 });
+
+// ---------- Popup promocional (DNA Women) ----------
+// 1x por sessao (sessionStorage). Imagem em /assets/img/popup.jpeg.
+(function() {
+  if (sessionStorage.getItem('ddh_popup_dna')) return;
+  function show() {
+    sessionStorage.setItem('ddh_popup_dna', '1');
+    var overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px';
+    var box = document.createElement('div');
+    box.style.cssText = 'position:relative;max-width:min(480px,92vw)';
+    var close = document.createElement('button');
+    close.setAttribute('aria-label', 'Fechar');
+    close.innerHTML = '&times;';
+    close.style.cssText = 'position:absolute;top:-14px;right:-14px;width:32px;height:32px;border-radius:50%;border:0;background:#fff;color:#222;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.35)';
+    var link = document.createElement('a');
+    link.href = 'https://trk.aeobr.com.br/c/dna-women-caracol-site';
+    link.target = '_blank';
+    link.rel = 'sponsored noopener';
+    var img = document.createElement('img');
+    img.src = '/assets/img/popup.jpeg';
+    img.alt = 'Promocao';
+    img.style.cssText = 'display:block;max-width:100%;max-height:80vh;border-radius:8px';
+    link.appendChild(img);
+    box.appendChild(link);
+    box.appendChild(close);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+    function dismiss() { overlay.remove(); }
+    close.addEventListener('click', dismiss);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) dismiss(); });
+    link.addEventListener('click', dismiss);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show);
+  else show();
+})();
